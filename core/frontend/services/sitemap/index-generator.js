@@ -35,7 +35,7 @@ class SiteMapIndexGenerator {
 
             return {
                 sitemap: [
-                    {loc: url},
+                    {loc: url.replace('http://', 'https://')},
                     {lastmod: moment(lastModified).toISOString()}
                 ]
             };
