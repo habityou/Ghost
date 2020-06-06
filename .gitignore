@@ -120,7 +120,3 @@ test/coverage
 # ignore all custom json files for config
 /config.*.json
 
-# Built asset files
-/core/built
-/core/server/web/admin/views/*.html
-/core/server/public/ghost.min.css
