@@ -11,7 +11,7 @@ class SiteMapManager {
 
         this.pages = options.pages || this.createPagesGenerator(options);
         this.posts = options.posts || this.createPostsGenerator(options);
-        this.users = this.authors = options.authors || this.createUsersGenerator(options);
+        // this.users = this.authors = options.authors || this.createUsersGenerator(options);
         this.tags = options.tags || this.createTagsGenerator(options);
         this.index = options.index || this.createIndexGenerator(options);
 
@@ -36,7 +36,7 @@ class SiteMapManager {
         events.on('routers.reset', () => {
             this.pages && this.pages.reset();
             this.posts && this.posts.reset();
-            this.users && this.users.reset();
+            // this.users && this.users.reset();
             this.tags && this.tags.reset();
         });
     }
@@ -46,7 +46,7 @@ class SiteMapManager {
             types: {
                 pages: this.pages,
                 posts: this.posts,
-                authors: this.authors,
+                // authors: this.authors,
                 tags: this.tags
             }
         });

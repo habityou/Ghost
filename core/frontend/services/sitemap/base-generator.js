@@ -92,7 +92,7 @@ class BaseSiteMapGenerator {
 
         node = {
             url: [
-                {loc: url},
+                {loc: url.replace('http://', 'https://')},
                 {lastmod: moment(this.getLastModifiedForDatum(datum)).toISOString()}
             ]
         };
