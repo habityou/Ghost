@@ -19,6 +19,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Uptime Action
       uses: srt32/uptime@v0.2
-        with:
-          # which url to hit
-          url-to-hit: https://www.habityou.com
+      with:
+        # which url to hit
+        url-to-hit: https://www.habityou.com
